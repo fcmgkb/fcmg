@@ -1,55 +1,82 @@
-<div class="question">
-        <p onclick="toggleAnswer('answer1')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1. Ultrasound/DI appointment location?</p>
-        <div id="answer1" class="answer">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Reveal Multiple Questions and Answers</title>
+    <style>
+        /* Hide the answers initially */
+        .answers {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Click - Frequently Asked Questions</h2>
+
+    <div class="qa-section">
+        <p onclick="toggleAnswers('q1')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1. Ultrasound/DI appointment location?</p>
+        <div id="q1" class="answers">
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;As per patient’s preference.</p>
         </div>
     </div>
 
-    <div class="question">
-        <p onclick="toggleAnswer('answer2')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2. Do you have parking/Valet Parking?</p>
-        <div id="answer2" class="answer">
-            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Parking yes, No Valet parking.</p>
+    <div class="qa-section">
+        <p onclick="toggleAnswers('q2')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2. Do you have parking/Valet Parking?</p>
+        <div id="q2" class="answers">
+           <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Parking yes, No Valet parking.</p>
         </div>
+    </div>
 
-<div class="question">
-        <p onclick="toggleAnswer('answer3')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3. Do you have parking/Valet Parking?</p>
-        <div id="answer3" class="answer">
+<div class="qa-section">
+        <p onclick="toggleAnswers('q3')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3. Do you have parking/Valet Parking?</p>
+        <div id="q3" class="answers">
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;(315) 218-7058
-</p>
         </div>
-  <div class="question">
-        <p onclick="toggleAnswer('answer4')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4. What can I expect if I call on the weekend?</p>
-        <div id="answer4" class="answer">
+    </div>
+
+<div class="qa-section">
+        <p onclick="toggleAnswers('q4')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4. What can I expect if I call on the weekend?</p>
+        <div id="q4" class="answers">
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;On call service – Dr. Nanavati/Dr. Bhatt on call physicians</p>
         </div>
-<div class="question">
-        <p onclick="toggleAnswer('answer5')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;5. Do I need pre-authorization for office visits?</p>
-        <div id="answer5" class="answer">
+    </div>
+
+<div class="qa-section">
+        <p onclick="toggleAnswers('q5')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;5. Do I need pre-authorization for office visits?</p>
+        <div id="q5" class="answers">
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;No authorization needed.</p>
         </div>
-<div class="question">
-        <p onclick="toggleAnswer('answer6')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;6. Are your facilities wheelchair accessible?</p>
-        <div id="answer6" class="answer">
+    </div>
+
+<div class="qa-section">
+        <p onclick="toggleAnswers('q6')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;6. Are your facilities wheelchair accessible?</p>
+        <div id="q6" class="answers">
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Yes</p>
         </div>
-<div class="question">
-        <p onclick="toggleAnswer('answer7')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;7. When can I expect my lab results?</p>
-        <div id="answer7" class="answer">
+    </div>
+<div class="qa-section">
+        <p onclick="toggleAnswers('q7')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;7. When can I expect my lab results?</p>
+        <div id="q7" class="answers">
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;At next appointment. If no appt scheduled, send portal message or call. Agent to send triage with details to V1 triage</p>
         </div>
-<div class="question">
-        <p onclick="toggleAnswer('answer8')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;8. Do you expect my copayment on the day of my appointment?</p>
-        <div id="answer8" class="answer">
-            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Yes</p>
+    </div>
+<div class="qa-section">
+        <p onclick="toggleAnswers('q8')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;8. Do you expect my copayment on the day of my appointment?</p>
+        <div id="q8" class="answers">
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Yes</p>
         </div>
-<div class="question">
-        <p onclick="toggleAnswer('answer9')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;9. How can I refill my prescription?</p>
-        <div id="answer9" class="answer">
+    </div>
+<div class="qa-section">
+        <p onclick="toggleAnswers('q9')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;9. How can I refill my prescription?</p>
+        <div id="q9" class="answers">
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Please request through pt portal or refill line, I can leave a message for the staff</p>
         </div>
-<div class="question">
-        <p onclick="toggleAnswer('answer10')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;10. What is a Patient Portal?</p>
-        <div id="answer10" class="answer">
+    </div>
+<div class="qa-section">
+        <p onclick="toggleAnswers('q10')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;10. What is a Patient Portal?</p>
+        <div id="q10" class="answers">
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Patient portal helps you communicate with your doctor and office via the web.<br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;You can View and change demographic information<br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Contact your office with a clinical question<br>
@@ -59,31 +86,36 @@
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;View your chart summary<br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;View allergy information<br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Review lab results<br>
-Ask any questions</p>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Ask any questions</p>
         </div>
-<div class="question">
-        <p onclick="toggleAnswer('answer11')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;11. How can I access the Patient Portal?</p>
-        <div id="answer11" class="answer">
+    </div>
+<div class="qa-section">
+        <p onclick="toggleAnswers('q11')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;11. How can I access the Patient Portal?</p>
+        <div id="q11" class="answers">
             <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3 Easy Steps!!<br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;A. Request Activation Letter from the reception - please stop at reception to receive your activation letter<br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;B. Follow the instructions on the letter<br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;C.Start using Patient Portal today!</p>
         </div>
-<div class="question">
-        <p onclick="toggleAnswer('answer12')">12. For billing questions </p>
-        <div id="answer12" class="answer">
-            <p>Dial <b>315-937-3026</b></p>
+    </div>
+<div class="qa-section">
+        <p onclick="toggleAnswers('q12')">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;12. For billing questions </p>
+        <div id="q12" class="answers">
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Dial <b>315-937-3026</b></p>
         </div>
-
     </div>
 
     <script>
-        function toggleAnswer(id) {
-            var answer = document.getElementById(id);
-            if (answer.style.display === "none") {
-                answer.style.display = "block";
+        function toggleAnswers(questionId) {
+            var answersDiv = document.getElementById(questionId);
+            // Toggle the visibility of the answers
+            if (answersDiv.style.display === 'none') {
+                answersDiv.style.display = 'block';
             } else {
-                answer.style.display = "none";
+                answersDiv.style.display = 'none';
             }
         }
     </script>
+
+</body>
+</html>
